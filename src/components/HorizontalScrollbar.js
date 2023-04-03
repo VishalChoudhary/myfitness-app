@@ -46,4 +46,4 @@ const HorizontalScrollbar = ({ data, bodyPart, setBodyPart }) => {
     )
 }
 
-export default HorizontalScrollbar
+export default HorizontalScrollbar;
