@@ -8,7 +8,7 @@ import ExerciseCard from './ExerciseCard';
 const Exercises = ({ exercises, setExercises, bodyPart }) => {
 
     const [currentPage, setCurrentPage] = useState(1);
-    const exercisesPerPage = 9;
+    const [exercisesPerPage] = useState(6);
 
     const indexOfLastExercise = currentPage * exercisesPerPage;
     const indexOfFirstExercise = indexOfLastExercise - exercisesPerPage;
@@ -33,6 +33,7 @@ const Exercises = ({ exercises, setExercises, bodyPart }) => {
             setExercises(exercisesData);
         }
         fetchExerciseData();
+        // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [bodyPart]);
 
     return (

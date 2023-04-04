@@ -33,17 +33,17 @@ const Detail = ({ exerciseDetail }) => {
         >
             <img src={gifUrl} alt={name} loading='lazy' className='detail-image' />
             <Stack sx={{
-                gap: { lg: '35px', xs: '20px' }
+                gap: { lg: '30px', xs: '20px' }
             }}>
-                <Typography variant='h3'>
+                <Typography sx={{ fontSize: { lg: '45px', xs: '30px' } }} fontWeight={700} textTransform="capitalize">
                     {name}
                 </Typography>
-                <Typography variant='h6'>
-                    Exercises keep you strong.{name}{' '}
-                    is of the best exercises to target your {target}. It will help you improve your
-                    mood and gain energy.
+                <Typography sx={{ fontSize: { lg: '22px', xs: '18px' } }} color="#4F4C4C">
+                    Exercises keep you strong.{' '}
+                    <span style={{ textTransform: 'capitalize' }}>{name}</span> bup is one
+                    of the best exercises to target your {target}. It will help you improve your{' '} mood and gain energy.
                 </Typography>
-                {extraDetail.map((item) => (
+                {extraDetail?.map((item) => (
                     <Stack key={item.name} direction="row" gap="24px" alignItems="center">
                         <Button sx={{ background: '#fff2db', borderRadius: '50%', width: '100px', height: '100px' }}>
                             <img src={item.icon} alt={bodyPart}
@@ -53,7 +53,7 @@ const Detail = ({ exerciseDetail }) => {
                                 }}
                             />
                         </Button>
-                        <Typography textTransform="capitalize" variant='h5'>
+                        <Typography textTransform="capitalize" sx={{ fontSize: { lg: '30px', xs: '20px' } }}>
                             {item.name}
                         </Typography>
                     </Stack>
