@@ -1,7 +1,7 @@
 import React from 'react';
 import { Box, Typography, Button } from '@mui/material';
 
-import HeroBannerImage from '../assets/images/banner.png';
+import HeroBannerImage from '../assets/images/Poster.jpg';
 
 const HeroBanner = () => {
     return (
@@ -18,7 +18,7 @@ const HeroBanner = () => {
                     fontSize: { lg: '44px', xs: '40px' }
                 }}
                 mb="23px" mt="30px">
-                Sweat, Smile <br /> and Repeat
+                Sweat, Smile and <br />Repeat
             </Typography>
             <Typography fontSize={22}
                 lineHeight="35px" mb={4}>
