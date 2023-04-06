@@ -7,7 +7,7 @@ import Loader from './Loader';
 const SimilarExercises = ({ targetMuscleExercises, equipmentExercises }) => {
     return (
         <Box sx={{
-            mt: { lg: '100px', xs: '0' }
+            mt: { lg: '40px', xs: '0' }
         }}>
             <Typography
                 sx={{
